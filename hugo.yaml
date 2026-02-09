@@ -3,13 +3,26 @@ languageCode: es-es
 title: Aretaslab
 theme: aretaslab
 
+# Fuentes de Google
 params:
   description: Cooperativa de trabajo especializada en soluciones digitales y automatización con inteligencia artificial
   author: Aretaslab
   email: info@aretaslab.tech
-  social:
-    bluesky: https://bsky.app/profile/asgareditions.bsky.social
-    github: https://github.com/aretaslabtech
+  fonts:
+    heading: 'Montserrat:wght@400;600;700;800'
+    body: 'Open+Sans:wght@400;500;600'
+
+# Colores Terroso Pastel
+style:
+  colors:
+    background: '#F7F3F0'
+    surface: '#FFFFFF'
+    primary: '#D4A373'
+    secondary: '#A98467'
+    text_main: '#4A443F'
+    text_muted: '#8B8279'
+    success: '#B7B7A4'
+    border: '#E6E1DD'
 
 menu:
   main:
