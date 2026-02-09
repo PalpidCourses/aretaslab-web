@@ -1,0 +1,37 @@
+{{ define "main" }}
+<main>
+    <div class="container">
+        <section class="hero">
+            <h1>{{ .Title }}</h1>
+            {{ .Content }}
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="products">
+                <div class="product-card">
+                    <h3>Gastos Familia</h3>
+                    <p>Gestión inteligente de gastos familiares con reconocimiento automático de tickets de compra.</p>
+                    <a href="#" class="btn">Más información</a>
+                </div>
+                <div class="product-card">
+                    <h3>Mcpone</h3>
+                    <p>Próximamente - Solución de gestión MCP para desarrolladores.</p>
+                    <span style="color: #999;">En desarrollo</span>
+                </div>
+                <div class="product-card">
+                    <h3>Solorol</h3>
+                    <p>Próximamente - Plataforma de gestión de juegos de rol.</p>
+                    <span style="color: #999;">En desarrollo</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes una idea que necesita automatización? Hablemos.</p>
+            <p><strong>Email:</strong> <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+        </section>
+    </div>
+</main>
+{{ end }}

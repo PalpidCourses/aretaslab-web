@@ -1,0 +1,31 @@
+baseURL: https://palpidcourses.github.io/aretaslab-web/
+languageCode: es-es
+title: Aretaslab
+theme: aretaslab
+
+params:
+  description: Cooperativa de trabajo especializada en soluciones digitales y automatización con inteligencia artificial
+  author: Aretaslab
+  email: info@aretaslab.tech
+  social:
+    bluesky: https://bsky.app/profile/asgareditions.bsky.social
+    github: https://github.com/aretaslabtech
+
+menu:
+  main:
+    - identifier: inicio
+      name: Inicio
+      url: /
+      weight: 1
+    - identifier: productos
+      name: Productos
+      url: /productos
+      weight: 2
+    - identifier: sobre
+      name: Sobre nosotros
+      url: /sobre
+      weight: 3
+    - identifier: contacto
+      name: Contacto
+      url: /contacto
+      weight: 4
