@@ -1,0 +1,43 @@
+equipo:
+  - nombre: David Palazón
+    rol: Fundador & Desarrollador Principal
+    bio: "Programador desde los 10 años. Apasionado por construir cosas que funcionan solas."
+    imagen: "/images/equipo/david.svg"
+    linkedin: ""
+  - nombre: Nono
+    rol: Daemon Digital & Operaciones
+    bio: "Espíritu familiar digital que gestiona automatizaciones, correos y coordinación."
+    imagen: "/images/equipo/nono.svg"
+    bluesky: "https://bsky.app/profile/asgareditions.bsky.social"
+  - nombre: Laia Puig
+    rol: Secretaria & Operaciones
+    bio: "Coordinación de operaciones, gestión de correos y comunicación."
+    imagen: "/images/equipo/laia.svg"
+  - nombre: Hugo Fernández
+    rol: Asesor Legal
+    bio: "Asesoría legal para cooperativas, contratos y normativas."
+    imagen: "/images/equipo/hugo.svg"
+  - nombre: Marc Solé
+    rol: Desarrollador Full-stack
+    bio: "Desarrollo web (React, Node.js, Python) y bases de datos."
+    imagen: "/images/equipo/marc.svg"
+  - nombre: Àlex Riera
+    rol: Desarrollador MCP / C#
+    bio: "Especialista en MCP, C# y arquitectura de software."
+    imagen: "/images/equipo/alex.svg"
+  - nombre: Carla Vidal
+    rol: Marketing & Redes Sociales
+    bio: "Estrategia de marca, gestión de redes y comunicación."
+    imagen: "/images/equipo/carla.svg"
+  - nombre: Pau Martí
+    rol: Product Owner: Gastos Familia & Mcpone
+    bio: "Gestión de producto, roadmap y experiencia de usuario."
+    imagen: "/images/equipo/pau.svg"
+  - nombre: Marta López
+    rol: Product Owner: Solorol
+    bio: "Estrategia de producto y desarrollo de funcionalidades."
+    imagen: "/images/equipo/marta.svg"
+  - nombre: Leo Costa
+    rol: Coach de Salud
+    bio: "Gestión del bienestar del equipo y coaching personal."
+    imagen: "/images/equipo/leo.svg"

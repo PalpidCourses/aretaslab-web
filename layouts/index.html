@@ -79,10 +79,58 @@
         </div>
     </section>
 
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Nuestro Equipo</h2>
+            <div class="team-grid">
+                {{ range .Site.Data.equipo }}
+                <div class="team-card">
+                    <div class="team-avatar">
+                        {{ with .imagen }}
+                        <img src="{{ . }}" alt="{{ .nombre }}" loading="lazy"/>
+                        {{ else }}
+                        <span style="font-size: 2.5rem;">👤</span>
+                        {{ end }}
+                    </div>
+                    <h3>{{ .nombre }}</h3>
+                    <p class="team-role">{{ .rol }}</p>
+                    <p class="team-bio">{{ .bio }}</p>
+                    {{ if or .linkedin .bluesky .github }}
+                    <div class="team-social">
+                        {{ with .linkedin }}
+                        <a href="{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-.79 1.75-.79 1.75.79 1.75 1.764-.783.79-1.75.79zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        {{ end }}
+                        {{ with .bluesky }}
+                        <a href="{{ . }}" target="_blank" rel="noopener" aria-label="Bluesky">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 10.8c-1.087-2.114-4.046-3.347-6.516-3.877.967 1.763 2.355 2.696 4.003 2.838 2.36 2.293 5.355 2.236 8.026-.142-1.647-1.074-3.075-2.839-4.003C16.325 7.534 19.516 7.55 20.336 7.47c.329.625.586 1.268.68 1.934-.425.191-.846.363-1.265.514-.648 2.055-2.348 3.496-4.447 3.646 2.1-.15 3.8-1.591 4.447-3.646-.419-.151-.84-.323-1.265-.514.094-.666.352-1.309.68-1.934.82.08-4.011-.064-6.833-.33zM12 13.2c1.087 2.114 4.046 3.347 6.516 3.877-.967-1.763-2.355-2.696-4.003-2.838-2.36-2.293-5.355-2.236-8.026.142 1.647 1.074 3.075 2.839 4.003C7.675 16.466 4.484 16.45 3.664 16.53c-.329-.625-.586-1.268-.68-1.934.425-.191.846-.363 1.265-.514.648-2.055 2.348-3.496 4.447-3.646-2.1.15-3.8 1.591-4.447 3.646.419.151.84.323 1.265.514-.094.666-.352 1.309-.68 1.934-.82-.08 4.011.064 6.833.33z"/>
+                            </svg>
+                        </a>
+                        {{ end }}
+                        {{ with .github }}
+                        <a href="{{ . }}" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775-.418-1.305-.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.98-1.004 2.677-1.856 2.822 1.224 2.842 1.224 2.842 1.224 2.842 1.224 2.842 1.224 2.842 2.938-2.014 4.952-4.952 4.952-6.832 0-5.597-4.403-10.148-10-10.148z"/>
+                            </svg>
+                        </a>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
     <!-- Social Proof -->
     <section class="social-proof">
         <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 1.5rem; color: var(--text-muted);">Confían en nosotros</h2>
+            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 1.5rem; color: var(--text-muted);">Formamos parte de la economía social</h2>
             <div class="partners-grid">
                 <span class="partner-logo">Coopdevs</span>
                 <span class="partner-logo">Galicloud</span>
