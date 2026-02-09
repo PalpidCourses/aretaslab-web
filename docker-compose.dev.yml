@@ -1,0 +1,15 @@
+services:
+  aretaslab-web:
+    image: nginx:alpine
+    container_name: aretaslab-web-dev
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - /home/ubuntu/development/aretaslab-web/public:/usr/share/nginx/html:ro
+    networks:
+      - aretaslab-net
+
+networks:
+  aretaslab-net:
+    driver: bridge
