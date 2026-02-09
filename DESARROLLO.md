@@ -139,3 +139,58 @@ Editar archivos en `layouts/`:
 - `layouts/_default/baseof.html` - Template base (header, footer)
 - `layouts/index.html` - Página principal
 - `layouts/_default/single.html` - Páginas individuales
+
+## Gestión del Equipo
+
+### Añadir Nuevo Miembro
+
+1. Editar `data/equipo.yml`:
+```yaml
+equipo:
+  - nombre: "Nombre Apellido"
+    rol: "Cargo o rol"
+    bio: "Descripción breve"
+    imagen: "/images/equipo/nombre.svg"  # o .jpg/.png
+    linkedin: "https://linkedin.com/in/..."   # Opcional
+    bluesky: "https://bsky.app/profile/..."   # Opcional
+    github: "https://github.com/..."            # Opcional
+```
+
+2. Añadir foto al directorio `/static/images/equipo/`:
+```bash
+# Copiar imagen (se recomienda 400x400px)
+cp /ruta/foto.jpg /home/ubuntu/development/aretaslab-web/static/images/equipo/nombre.jpg
+```
+
+### Generar Nuevos Avatares
+
+Para crear avatares SVG con iniciales:
+```bash
+/home/ubuntu/.openclaw/workspace/scripts/generar_avatares_equipo.sh
+```
+
+Este script genera avatares con círculos de colores terrosos y las iniciales de cada miembro.
+
+### Reemplazar Avatar con Foto Real
+
+```bash
+# Copiar foto al directorio del equipo
+cp /ruta/foto-real.jpg /home/ubuntu/development/aretaslab-web/static/images/equipo/david.jpg
+
+# Actualizar data/equipo.yml para usar .jpg en lugar de .svg
+```
+
+### Miembros del Equipo
+
+| Miembro | Rol | Avatar |
+|---------|------|---------|
+| David Palazón | Fundador & Desarrollador Principal | /images/equipo/david.svg |
+| Nono | Daemon Digital & Operaciones | /images/equipo/nono.svg |
+| Laia Puig | Secretaria & Operaciones | /images/equipo/laia.svg |
+| Hugo Fernández | Asesor Legal | /images/equipo/hugo.svg |
+| Marc Solé | Desarrollador Full-stack | /images/equipo/marc.svg |
+| Àlex Riera | Desarrollador MCP / C# | /images/equipo/alex.svg |
+| Carla Vidal | Marketing & Redes Sociales | /images/equipo/carla.svg |
+| Pau Martí | Product Owner: Gastos Familia & Mcpone | /images/equipo/pau.svg |
+| Marta López | Product Owner: Solorol | /images/equipo/marta.svg |
+| Leo Costa | Coach de Salud | /images/equipo/leo.svg |
