@@ -1,7 +1,6 @@
 baseURL: https://palpidcourses.github.io/aretaslab-web/
 languageCode: es-es
 title: Aretaslab
-theme: aretaslab
 
 # Fuentes de Google
 params:
